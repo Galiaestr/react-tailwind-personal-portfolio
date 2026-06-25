@@ -5,7 +5,7 @@ const projects = [
     title: "SCI",
     description:
       "Proyecto para gestionar Cursos, permitiendo un mejor manejo de la informacion de los participantes, del mismo modo informativa para futuros interesados",
-    image: "/react-tailwind-personal-portfolio/projects/project1.png",
+    image: "/projects/project1.png",
     tags: ["Flask", "Python", "MySQL", "Bootstrap"],
     link: "#",
     github: "https://github.com/Galiaestr/SCI",
@@ -14,7 +14,7 @@ const projects = [
     title: "DOM",
     description:
       "Galería dinámica de imágenes implementada con DOM, eventos y transiciones.",
-    image: "/react-tailwind-personal-portfolio/projects/project2.png",
+    image: "/projects/project2.png",
     tags: ["JavaScript"],
     link: "#",
     github: "https://github.com/Galiaestr/dom2",
@@ -23,7 +23,7 @@ const projects = [
     title: "Dom",
     description:
       "Tablero de tareas dinamico",
-    image: "/react-tailwind-personal-portfolio/projects/project3.png",
+    image: "/projects/project3.png",
     tags: ["JavaScript"],
     link: "#",
     github: "https://github.com/Galiaestr/actdom/tree/main",
