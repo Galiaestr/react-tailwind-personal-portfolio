@@ -1,11 +1,12 @@
 import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
+
 const projects = [
   {
     title: "SCI",
     description:
       "Proyecto para gestionar Cursos, permitiendo un mejor manejo de la informacion de los participantes, del mismo modo informativa para futuros interesados",
-    image: "/projects/project1.png",
+    image: import.meta.env.BASE_URL + "projects/project1.png",
     tags: ["Flask", "Python", "MySQL", "Bootstrap"],
     link: "#",
     github: "https://github.com/Galiaestr/SCI",
@@ -14,20 +15,19 @@ const projects = [
     title: "DOM",
     description:
       "Galería dinámica de imágenes implementada con DOM, eventos y transiciones.",
-    image: "/projects/project2.png",
+    image: import.meta.env.BASE_URL + "projects/project2.png",
     tags: ["JavaScript"],
     link: "#",
     github: "https://github.com/Galiaestr/dom2",
   },
   {
     title: "Dom",
-    description:
-      "Tablero de tareas dinamico",
-    image: "/projects/project3.png",
+    description: "Tablero de tareas dinamico",
+    image: import.meta.env.BASE_URL + "projects/project3.png",
     tags: ["JavaScript"],
     link: "#",
     github: "https://github.com/Galiaestr/actdom/tree/main",
-  }  
+  },
 ];
 
 export const Projects = () => {
@@ -70,11 +70,7 @@ export const Projects = () => {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div
-                  className="absolute inset-0 
-                bg-gradient-to-t from-card via-card/50
-                 to-transparent opacity-60"
-                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent opacity-60" />
                 {/* Overlay Links */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a
@@ -98,12 +94,7 @@ export const Projects = () => {
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight
-                    className="w-5 h-5 
-                  text-muted-foreground group-hover:text-primary
-                   group-hover:translate-x-1 
-                   group-hover:-translate-y-1 transition-all"
-                  />
+                  <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                 </div>
                 <p className="text-muted-foreground text-sm">
                   {project.description}
